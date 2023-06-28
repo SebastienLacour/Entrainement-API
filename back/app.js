@@ -11,6 +11,7 @@ mongoose.connect('mongodb+srv://sebastien:arakno1@cluster0.rwpnj1a.mongodb.net/'
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
   const weaponsRoutes = require('./routes/weapons')
+  const spellsRoutes = require('./routes/spells')
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -22,5 +23,6 @@ app.use((req, res, next) => {
 app.use(bodyParser.json())
 
 app.use('/api', weaponsRoutes)
+app.use('/api', spellsRoutes)
 
 module.exports = app
