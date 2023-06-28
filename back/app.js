@@ -1,6 +1,16 @@
 const express = require('express')
+const mongoose = require('mongoose')
 
+const bodyParser = require("body-parser")
 const app = express()
+
+mongoose.connect('mongodb+srv://sebastien:arakno1@cluster0.rwpnj1a.mongodb.net/',
+  { useNewUrlParser: true,
+    useUnifiedTopology: true })
+  .then(() => console.log('Connexion à MongoDB réussie !'))
+  .catch(() => console.log('Connexion à MongoDB échouée !'));
+
+  const weaponsRoutes = require('./routes/weapons')
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -9,8 +19,8 @@ app.use((req, res, next) => {
     next();
   });
 
-app.use((req, res) => {
-    res.json({ message: "requête bien reçue"})
-})
+  app.use(bodyParser.json())
+
+app.use('/api', weaponsRoutes)
 
 module.exports = app

@@ -1,7 +1,7 @@
 const http = require('http')
+const app = require('./app')
 
-const server = http.createServer((req, res) => {
-    res.end('ça marche')
-})
+app.set('port', 3000)
+const server = http.createServer(app)
 
 server.listen(3000)
