@@ -46,7 +46,7 @@ exports.readOneWeapon = (req, res) => {
 
 exports.updateOneWeapon = (req, res) => {
     console.log(req.params.id)
-    weaponsModel.updateOne({_id: req.params.id},...req.body)
+    weaponsModel.updateOne({_id: req.params.id}, {...req.body})
                                 .then(weapon => res.status(200).json(req.body))
                                 .catch(error => res.status(404).json({error}))
 }
