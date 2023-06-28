@@ -36,3 +36,21 @@ exports.readWeapons = (req, res) => {
                         .then(weapon => res.status(200).json(weapon))
                         .catch(error => res.status(404).json(error))
 }
+
+exports.readOneWeapon = (req, res) => {
+
+    weaponsModel.findOne({_id: req.params.id})
+                            .then(weapon => res.status(200).json(weapon))
+                            .catch(error => res.status(404).json(error))
+}
+
+exports.updateOneWeapon = (req, res) => {
+    console.log(req.params.id)
+    weaponsModel.updateOne({_id: req.params.id},...req.body)
+                                .then(weapon => res.status(200).json(req.body))
+                                .catch(error => res.status(404).json({error}))
+}
+
+exports.deleteOneWeapon = (req, res) => {
+
+}
