@@ -29,3 +29,10 @@ exports.createWeapons = (req, res) => {
         .then(() => res.status(201).json({message : "arme créée"}))
         .catch( error => res.status(500).json({error}))
 }
+
+exports.readWeapons = (req, res) => {
+
+    weaponsModel.find()
+                        .then(weapon => res.status(200).json(weapon))
+                        .catch(error => res.status(404).json(error))
+}
