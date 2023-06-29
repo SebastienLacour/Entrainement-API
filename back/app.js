@@ -12,6 +12,7 @@ mongoose.connect('mongodb+srv://sebastien:arakno1@cluster0.rwpnj1a.mongodb.net/'
 
   const weaponsRoutes = require('./routes/weapons')
   const spellsRoutes = require('./routes/spells')
+  const materialsRoutes = require('./routes/materials')
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -24,5 +25,6 @@ app.use(bodyParser.json())
 
 app.use('/api', weaponsRoutes)
 app.use('/api', spellsRoutes)
+app.use('/api', materialsRoutes)
 
 module.exports = app
