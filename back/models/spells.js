@@ -6,6 +6,7 @@ const spellSchema = mongoose.Schema({
     type: {type: String, required: true},
     FPcost: {type: Number, required: true},
     staminaCost: {type: Number, required: true},
+    slot: {type: Number, required: true},
     stats: {type: Object, required: true},
     effect: {type: String, required: true},
     drop: {type: Array, required: true},
