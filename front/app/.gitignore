@@ -26,3 +26,5 @@ package.json
 package-lock.json
 /public/robots.txt
 /public/manifest.json
+/assets
+
