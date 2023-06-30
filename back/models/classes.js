@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 const classesSchema = mongoose.Schema({
     name: {type: String, required: true},
     imageUrl: {type: String, required: true},
-    descrption: {type: String, required: true},
-    stats: {type: Array, required: true},
+    description: {type: String, required: true},
+    stats: {type: Object, required: true},
     equipement: {type: Object, required: true}
 })
 
