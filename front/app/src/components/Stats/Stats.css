@@ -1,0 +1,17 @@
+main{
+    height: 100%;
+}
+
+.title{
+    margin-top: 30px;
+}
+
+.accordion-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+

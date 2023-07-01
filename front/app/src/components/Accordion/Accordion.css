@@ -1,0 +1,23 @@
+.accordion {
+    background-color: #342E2D;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.accordion__head {
+    background-color: #5D4C03;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.accordion__body {
+    height: 70%;
+    flex-grow: 2;
+    color: #D3AE0D;
+}

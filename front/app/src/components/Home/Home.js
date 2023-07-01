@@ -17,7 +17,7 @@ export default function Home() {
           <main>
             <div className="title">
               <h1>Bienvenu sur notre merveilleux site !</h1>
-              <p>Vous trouverez ici ce dont vous avez besoin !!</p>
+              <p>Vous trouverez ici tout ce dont vous avez besoin !!</p>
             </div>
             <div className="container">
               {themes.map((el) => (
