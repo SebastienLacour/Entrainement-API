@@ -53,7 +53,7 @@ export default function Accordion(props) {
                     <p>{el}</p>
                 ))}
 
-                {props.softCap ? <div className='accordion__softcap'>
+                {props.softCap.length > 1 ? <div className='accordion__softcap'>
                     {typeof props.softCap[0] === "number" ?
                         <div>
                             <h3> soft cap: </h3>
@@ -74,31 +74,6 @@ export default function Accordion(props) {
 
                 </div>
             }
-            {/* <div className="accordion__head">
-                <h2>{props.name}</h2>
-                <i class="fa-solid fa-plus fa-xl"></i>
-            </div> */}
-            {/* <div className="accordion__body">
-                {props.description.split(",").map(el => (
-                    <p>{el}</p>
-                ))}
-
-                {props.softCap ? <div className='accordion__softcap'>
-                    {typeof props.softCap[0] === "number" ?
-                        <div>
-                            <h3> soft cap: </h3>
-                            <p>{props.softCap.join("/")}</p>
-                        </div>
-                        :
-                        <div>
-                            <h3> soft cap: </h3>
-                            <p>{props.softCap.join(", ")}</p>
-                        </div>
-                    }
-                </div>
-                    :
-                    ""
-                } */}
             </div>
     )
 }

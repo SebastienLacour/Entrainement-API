@@ -1,9 +1,14 @@
 .main-stats{
     height: 100%;
+    text-align: center;
 }
 
 .title{
     margin-top: 30px;
+}
+
+.section__title{
+    color: #D3AE0D;
 }
 
 .accordion-container{
@@ -14,5 +19,6 @@
     width: 90%;
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: 70px;
 }
 
