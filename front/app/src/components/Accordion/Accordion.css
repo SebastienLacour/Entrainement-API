@@ -8,7 +8,7 @@
 
 .accordion__head {
     background-color: #5D4C03;
-    height: 30%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,3 +21,10 @@
     flex-grow: 2;
     color: #D3AE0D;
 }
+
+.accordion__body__close{
+    height: 0;
+    overflow: hidden;
+
+}
+

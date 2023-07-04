@@ -1,4 +1,4 @@
-main{
+.main-stats{
     height: 100%;
 }
 
@@ -9,6 +9,7 @@ main{
 .accordion-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     width: 90%;
     margin-top: 100px;

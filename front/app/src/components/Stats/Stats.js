@@ -45,7 +45,7 @@ export default function Stats() {
             <Header />
             <div className="background">
                 <div className="overlay">
-                    <main>
+                    <main className='main-stats'>
                         <div className="title">
                             <h1>Statistiques</h1>
                             <p>Vous trouverez ici les informations concernant les différentes statistques et les informations les concernant</p>
