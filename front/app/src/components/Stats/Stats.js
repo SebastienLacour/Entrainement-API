@@ -13,6 +13,7 @@ export default function Stats() {
         fetch("http://localhost:3000/api/stats/")
         .then(response => response.json())
         .then(result => {
+            console.log(result)
             setData(result)
         })
         .catch(error => console.error(error))
@@ -23,7 +24,7 @@ export default function Stats() {
     }, [])
 
     const levelingStats = data.filter(el => el.softCap.length > 1)
-
+    console.log(data)
     const otherStats = data.filter(el => el.softCap.length <= 1)
 
     return (

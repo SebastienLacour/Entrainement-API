@@ -16,7 +16,7 @@ export default function Home() {
         <div className="overlay">
           <main>
             <div className="title">
-              <h1>Bienvenu sur notre merveilleux site !</h1>
+              <h1>Bienvenue sur notre merveilleux site !</h1>
               <p>Vous trouverez ici tout ce dont vous avez besoin !!</p>
             </div>
             <div className="container">
