@@ -20,6 +20,7 @@ mongoose.connect('mongodb+srv://sebastien:arakno1@cluster0.rwpnj1a.mongodb.net/'
   const talismanRoutes = require('./routes/talisman')
   const armorRoutes = require('./routes/armors')
   const statRoutes = require('./routes/stats')
+  const damageRoutes = require('./routes/damages')
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -40,5 +41,6 @@ app.use('/api', classRoutes)
 app.use('/api', talismanRoutes)
 app.use('/api', armorRoutes)
 app.use('/api', statRoutes)
+app.use('/api', damageRoutes)
 
 module.exports = app
