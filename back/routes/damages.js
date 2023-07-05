@@ -8,5 +8,6 @@ router.post("/damages", damageCtrl.createDamage)
 router.get("/damages", damageCtrl.readDamage)
 router.get("/damages/:id", damageCtrl.readOneDamage)
 router.put("/damages/:id", damageCtrl.updateOneDamage)
+router.delete("/damages/:id", damageCtrl.deleteOneDamage)
 
 module.exports = router
