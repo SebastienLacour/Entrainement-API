@@ -7,7 +7,7 @@ import './Home.css'
 
 export default function Home() {
 
-  const themes = ["statistiques", "classes", "equipements"]
+  const themes = ["statistiques", "dégâts", "classes", "equipements"]
 
   return (
     <div>

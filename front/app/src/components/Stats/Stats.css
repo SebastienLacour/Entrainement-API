@@ -9,6 +9,13 @@
 
 .section__title{
     color: #D3AE0D;
+    background-color: rgba(41, 39, 4, 0.79);
+    border-top: ridge 2px #D3AE0D;
+    border-bottom: ridge 2px #D3AE0D;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .accordion-container{

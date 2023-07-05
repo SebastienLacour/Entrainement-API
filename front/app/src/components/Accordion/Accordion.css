@@ -25,6 +25,9 @@
 .accordion__body__close{
     height: 0;
     overflow: hidden;
+}
 
+.accordion__img{
+    width: 10%;
 }
 

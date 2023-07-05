@@ -15,8 +15,9 @@ export default function Accordion(props) {
                 <div>
                     <div className='accordion__head'>
                         <h2>{props.name}</h2>
-                        <i class="fa-solid fa-plus fa-xl" onClick={toggleHandler}></i>
-
+                        {props.imageUrl === undefined ? <i class="fa-solid fa-plus fa-xl" onClick={toggleHandler}></i>
+                                                        : 
+                                                        <img src={props.imageUrl} alt={props.name} className='accordion__img' onClick={toggleHandler} />}
                     </div>
                     <div className='accordion__body__close'>
                     {props.description.split(",").map(el => (
