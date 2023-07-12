@@ -38,7 +38,7 @@ export default function ItemList(props) {
                         <div className="container">
                             {data.map((el) => (
                                 <div className='container__item'>
-                                    <Link to={'/' + el._id} className='link'>
+                                    <Link to={'./' + el._id} className='link'>
                                         <div className='item__inside'>
                                             <div className='item__head'>
                                                 <h2>{el.name}</h2>
