@@ -16,7 +16,7 @@ function App() {
         <Route path='/statistiques' element={<Stats/>}/>
         <Route path='/dégâts' element={<Damages/>}/>
         <Route path='/classes' element={<ItemList url="http://localhost:3000/api/classes/" title="classes"/>}/>
-        <Route path='/classes/:id' element={<Item url="http://localhost:3000/api/classes/"/>}/>
+        <Route path='/classes/:id' element={<Item url="http://localhost:3000/api/classes/" back="/classes"/>}/>
       </Routes>
     </div>
   );
