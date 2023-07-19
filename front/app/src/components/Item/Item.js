@@ -27,11 +27,10 @@ export default function Item(props) {
 
   console.log(data)
 
-  const weapons = data.equipement.armes
-  const armors = data.equipement.armure
+  const equipement = data.equipement
 
-  const stats = data.stats
-  console.log(stats);
+  // const weapons = data.equipement.arme
+  // const armors = data.equipement.armure
 
   return (
     <div>
@@ -55,7 +54,33 @@ export default function Item(props) {
                 {data.stats ? 
                   <div className='stats'>
                     <table>
-                      <td className = 'stats__cell'>
+                      <thead>
+                        <tr>
+                          <th>niveau</th>
+                          <th>vigueur</th>
+                          <th>esprit</th>
+                          <th>endurance</th>
+                          <th>force</th>
+                          <th>dextérité</th>
+                          <th>intelligence</th>
+                          <th>foi</th>
+                          <th>ésotérisme</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>{data.stats.niveau}</td>
+                          <td>{data.stats.vigeur}</td>
+                          <td>{data.stats.esprit}</td>
+                          <td>{data.stats.endurance}</td>
+                          <td>{data.stats.force}</td>
+                          <td>{data.stats.dextérité}</td>
+                          <td>{data.stats.intelligence}</td>
+                          <td>{data.stats.foi}</td>
+                          <td>{data.stats.ésotérisme}</td>
+                        </tr>
+                      </tbody>
+                      {/* <td className = 'stats__cell'>
                       <th className='stats__cell__head'>
                         niveau
                       </th>
@@ -126,7 +151,7 @@ export default function Item(props) {
                       <tr className = 'stats__cell__row'>
                         {data.stats.ésotérisme}
                       </tr>
-                      </td>
+                      </td> */}
                     </table>
                   </div>
                   :
@@ -141,17 +166,17 @@ export default function Item(props) {
                       <div className='item__equipement__list'>
                         <h3>armes</h3>
                         <ul>
-                          {weapons.map((el) => (
+                          {/* {weapons.map((el) => (
                             <li>{el}</li>
-                          ))}
+                          ))} */}
                         </ul>
                       </div>
                       <div className='item__equipement__list'>
                         <h3>armures</h3>
                         <ul>
-                          {armors.map((el) => (
+                          {/* {armors.map((el) => (
                             <li>{el}</li>
-                          ))}
+                          ))} */}
                         </ul>
                       </div>
                     </div>
