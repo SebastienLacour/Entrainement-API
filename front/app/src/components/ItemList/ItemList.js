@@ -36,7 +36,7 @@ export default function ItemList(props) {
                             <p>Vous trouverez ici toutes les informations concernant les classes</p>
                         </div>
                         <div className="container">
-                            {data.map((el) => (
+                            {props.url ? data.map((el) => (
                                 <div key={el._id} className='container__item'>
                                     <Link to={'./' + el._id} className='link'>
                                         <div className='item__inside'>
@@ -49,7 +49,17 @@ export default function ItemList(props) {
                                         </div>
                                     </Link>
                                 </div>
-                            ))}
+                            )) : 
+                                props.data.map((el) => (
+                                    <div className='container__item'>
+                                        <Link>
+                                            <div className="item__inside">
+                                                <h2>{el}</h2>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </main>
                 </div>

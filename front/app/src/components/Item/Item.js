@@ -29,9 +29,6 @@ export default function Item(props) {
 
   const equipement = data.equipement
 
-  // const weapons = data.equipement.arme
-  // const armors = data.equipement.armure
-
   return (
     <div>
       <Header />
@@ -80,78 +77,6 @@ export default function Item(props) {
                           <td>{data.stats.ésotérisme}</td>
                         </tr>
                       </tbody>
-                      {/* <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        niveau
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.niveau}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        vigueur
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.vigeur}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        esprit
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.esprit}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        endurance
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.endurance}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        force
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.force}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        dextérité
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.dextérité}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        intelligence
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.intelligence}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        foi
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.foi}
-                      </tr>
-                      </td>
-                      <td className = 'stats__cell'>
-                      <th className='stats__cell__head'>
-                        ésotérisme
-                      </th>
-                      <tr className = 'stats__cell__row'>
-                        {data.stats.ésotérisme}
-                      </tr>
-                      </td> */}
                     </table>
                   </div>
                   :
